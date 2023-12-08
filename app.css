@@ -1,76 +1,164 @@
-#logo {
-    width: 100px;  /* Adjust as needed */
-    height: auto; 
-    margin-left: 60px;
-}
+/* Global styles */
 body {
-    background-color: #001433
-
-
-    ;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-body {
-  font-family:'Roboto';
-  background-color: #131417;  
+
+.hero-image {
+  max-width: 30%;
+  max-height: 350px;
 }
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
 p {
-  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+  font-size: 16px;
+  line-height: 1.5;
 }
-.container {
-  color: #e5e5e5;
-  font-size: 2.26rem;
-  text-transform: uppercase;
-  height: 100vh;
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #2196F3;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header styles */
+header {
+  background-color: #fff;
+  padding: 1rem 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: absolute;
-    top: -300px;  /* Adjust as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    color: black;
-    font-family: 'Roboto', sans-serif;
-
+  justify-content: space-between;
 }
 
-.animation {
-  height:50px;
-  overflow:hidden;
-  margin-left: 1rem;
+.logo {
+  display: flex;
+  align-items: center;
 }
 
-.animation > div > div {
-  padding: 0.25rem 0.75rem;
-  height:2.81rem;
-  margin-bottom: 2.81rem;
-  display:inline-block;
+.logo img {
+  width: 50px;
+  height: auto;
+  margin-right: 1rem;
 }
 
-.animation div:first-child {
-  animation: text-animation 8s infinite;
+.nav-links {
+  display: flex;
 }
 
-.first div {
-  background-color:#20a7d8;
-}
-.second div {
-  background-color:#CD921E;
-}
-.third div {
-  background-color:#c10528;
+.nav-links li {
+  margin: 0 1rem;
 }
 
-@keyframes text-animation {
-  0% {margin-top: 0;}
-  10% {margin-top: 0;}
-  20% {margin-top: -5.62rem;}
-  30% {margin-top: -5.62rem;}
-  40% {margin-top: -11.24rem;}
-  60% {margin-top: -11.24rem;}
-  70% {margin-top: -5.62rem;}
-  80% {margin-top: -5.62rem;}
-  90% {margin-top: 0;}
-  100% {margin-top: 0;}
+/* Main styles */
+.hero {
+  background-color: #f1f1f1;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.hero-image {
+  width: 50%;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.card {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.join-button {
+  background-color: #2196F3;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.technologies {
+  padding: 3rem;
+}
+
+.technology-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.technology {
+  width: 30%;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+.technology-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.technology-sublist {
+  padding: 0;
+}
+
+.technology-sublist li {
+  margin: 0.5rem 0;
+}
+
+/* Contact styles */
+.contact {
+  padding: 3rem;
+  border-top: 1px solid #ddd;
+}
+
+.contact-list {
+  padding: 0;
+}
+
+.contact-list li {
+  margin: 0.5rem 0;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
 }
